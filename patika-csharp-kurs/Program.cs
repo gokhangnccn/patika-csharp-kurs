@@ -20,6 +20,8 @@ namespace patikaDevOdevleri
             Console.WriteLine("2. Konsola Üçgen Çizme:");
             Console.WriteLine("3. Yarıçapa göre konsola daire çizdir:");
             Console.WriteLine("4. Stringteki seçili indexteki harfi sil:");
+            Console.WriteLine("5. Girilen cümledeki kelimeleri ters çevir:");
+
 
             Console.WriteLine("0. Çık:");
 
@@ -49,9 +51,13 @@ namespace patikaDevOdevleri
                 case 4:
                     Console.WriteLine("Silinecek indexi seçiniz:");
                     IndextekiniCikar cikar = new IndextekiniCikar();
-                    Console.WriteLine(cikar.indextekiniCikar(GetInputIndex()));
+                    Console.WriteLine(cikar.indextekiniCikar(GetNumberInputIndex()));
                     break;
-                
+                case 5:
+                    KelimeyiTersCevir ktc = new KelimeyiTersCevir();
+                    Console.WriteLine(ktc.kelimeyiTersCevir(GetStringInput()));
+                    break;
+
             }
 
         }
@@ -68,7 +74,7 @@ namespace patikaDevOdevleri
                 return GetInputFromUser(); 
             }
         }
-        private static int GetInputIndex()
+        private static int GetNumberInputIndex()
         {
             Console.Write("Lütfen değer giriniz: ");
             if (int.TryParse(Console.ReadLine(), out int height) && height >= 0)
@@ -78,8 +84,25 @@ namespace patikaDevOdevleri
             else
             {
                 Console.WriteLine("Geçersiz bir giriş yapıldı. Lütfen pozitif bir tam sayı giriniz.");
-                return GetInputIndex();
+                return GetNumberInputIndex();
             }
         }
+
+        private static string GetStringInput()
+        {
+            Console.Write("Lütfen cümle giriniz: ");
+            string input = Console.ReadLine();
+
+            if (!string.IsNullOrEmpty(input))
+            {
+                return input;
+            }
+            else
+            {
+                Console.WriteLine("Geçersiz bir giriş yapıldı. Lütfen boş olmayan bir cümle giriniz.");
+                return GetStringInput();
+            }
+        }
+
     }
 }
