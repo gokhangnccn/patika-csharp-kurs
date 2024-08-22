@@ -57,7 +57,7 @@ namespace patika_csharp_kurs
                     Console.WriteLine(ktc.kelimeyiTersCevir(GetStringInput()));
                     break;
                 case 6:
-                    Console.WriteLine("Lütfen şu şekillerden birini seçiniz: (Daire, Dikdörtgen, Kare, Üçgen)");
+                    Console.WriteLine("Lütfen şu şekillerden birini seçiniz: (Daire, Dortgen, Kup, Ucgen)");
                     sekilTipi = Console.ReadLine();
                     seciliSekil(sekilTipi);
                     break;
@@ -137,7 +137,7 @@ namespace patika_csharp_kurs
                 case "ucgen":
                     Console.WriteLine("1. Kenar uzunluğunu girin:");
                     int side1 = GetNumberInputIndex();
-                    Console.WriteLine("2. Kenar uzunluğunu girin:");
+                    Console.WriteLine("2. Kenar uzunluğunu girin(taban):");
                     int side2 = GetNumberInputIndex();
                     Console.WriteLine("3. Kenar uzunluğunu girin:");
                     int side3 = GetNumberInputIndex();
