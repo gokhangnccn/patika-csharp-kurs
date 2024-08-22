@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ROG-GOKHAN.gokhan\\source\\repos\\patika-csharp-kurs\\patika-csharp-kurs\\patika-csharp-kurs.csproj",
+      "projectUniqueName": "C:\\Users\\ROG-GOKHAN.gokhan\\Source\\Repos\\patika-csharp-course\\patika-csharp-kurs\\patika-csharp-kurs.csproj",
       "projectName": "patika-csharp-kurs",
-      "projectPath": "C:\\Users\\ROG-GOKHAN.gokhan\\source\\repos\\patika-csharp-kurs\\patika-csharp-kurs\\patika-csharp-kurs.csproj",
+      "projectPath": "C:\\Users\\ROG-GOKHAN.gokhan\\Source\\Repos\\patika-csharp-course\\patika-csharp-kurs\\patika-csharp-kurs.csproj",
       "packagesPath": "C:\\Users\\ROG-GOKHAN.gokhan\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ROG-GOKHAN.gokhan\\source\\repos\\patika-csharp-kurs\\patika-csharp-kurs\\obj\\",
+      "outputPath": "C:\\Users\\ROG-GOKHAN.gokhan\\Source\\Repos\\patika-csharp-course\\patika-csharp-kurs\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ROG-GOKHAN.gokhan\\AppData\\Roaming\\NuGet\\NuGet.Config",
