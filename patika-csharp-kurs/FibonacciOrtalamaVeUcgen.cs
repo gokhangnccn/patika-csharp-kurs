@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace PatikaExamples.FibonacciTriangle
+namespace patika_csharp_kurs
 {
     class FibonacciOrtalamaVeUcgen
     {

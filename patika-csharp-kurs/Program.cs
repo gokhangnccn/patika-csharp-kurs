@@ -1,19 +1,19 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using patika_csharp_kurs;
-using PatikaExamples.FibonacciTriangle;
-using static patikaDevOdevleri.UcgenCiz;
+using patika_csharp_kurs.AlanHesaplama;
 
-namespace patikaDevOdevleri
+namespace patika_csharp_kurs
 {
     public class Program
     {
         public static void Main(string[] args)
         {
-
+            string sekilTipi;
             int height = 0;
             Console.WriteLine("Kullanacağınız Uygulamanın Sayısını Giriniz:");
             Console.WriteLine("1. Fibonacci serisi hesaplama");
@@ -21,8 +21,7 @@ namespace patikaDevOdevleri
             Console.WriteLine("3. Yarıçapa göre konsola daire çizdir:");
             Console.WriteLine("4. Stringteki seçili indexteki harfi sil:");
             Console.WriteLine("5. Girilen cümledeki kelimeleri ters çevir:");
-
-
+            Console.WriteLine("6. Geometrik şekil işlemleri:");
             Console.WriteLine("0. Çık:");
 
             Console.WriteLine("Kullanacağınız Uygulamayı Giriniz:");
@@ -39,7 +38,7 @@ namespace patikaDevOdevleri
                 case 2:
                     Console.WriteLine("Oluşturulacak üçgenin yüksekliğini girin:");
                     height = GetInputFromUser();
-                    TriangleDrawer drawer = new TriangleDrawer();
+                    UcgenCiz drawer = new UcgenCiz();
                     drawer.DrawTriangle(height);
                     break;
                 case 3:
@@ -57,13 +56,23 @@ namespace patikaDevOdevleri
                     KelimeyiTersCevir ktc = new KelimeyiTersCevir();
                     Console.WriteLine(ktc.kelimeyiTersCevir(GetStringInput()));
                     break;
+                case 6:
+                    Console.WriteLine("Lütfen şu şekillerden birini seçiniz: (Daire, Dikdörtgen, Kare, Üçgen)");
+                    sekilTipi = Console.ReadLine();
+                    seciliSekil(sekilTipi);
+                    break;
+                case 0:
+                    Console.WriteLine("Çıkış yapılıyor...");
+                    return;
+                default:
+                    Console.WriteLine("Geçersiz seçim.");
+                    break;
 
             }
 
         }
         private static int GetInputFromUser()
         {
-            Console.Write("Lütfen değer giriniz: ");
             if (int.TryParse(Console.ReadLine(), out int height) && height > 0)
             {
                 return height;
@@ -71,12 +80,11 @@ namespace patikaDevOdevleri
             else
             {
                 Console.WriteLine("Geçersiz bir giriş yapıldı. Lütfen pozitif bir tam sayı giriniz.");
-                return GetInputFromUser(); 
+                return GetInputFromUser();
             }
         }
         private static int GetNumberInputIndex()
         {
-            Console.Write("Lütfen değer giriniz: ");
             if (int.TryParse(Console.ReadLine(), out int height) && height >= 0)
             {
                 return height;
@@ -104,5 +112,76 @@ namespace patikaDevOdevleri
             }
         }
 
+
+
+        public static void seciliSekil(string sekilTipi)
+        {
+            string islemTipi;
+            Sekil sekil = null;
+
+            switch (sekilTipi.ToLower())
+            {
+                case "daire":
+                    Console.WriteLine("Yarıçap girin:");
+                    double radius = GetInputFromUser();
+                    sekil = new Daire(radius);
+                    break;
+                case "dortgen":
+                    Console.WriteLine("1. Kenar uzunluğunu girin:");
+                    int kenar1 = GetNumberInputIndex();
+                    Console.WriteLine("2. Kenar uzunluğunu girin:");
+
+                    int kenar2 = GetNumberInputIndex();
+                    sekil = new Dortgen(kenar1, kenar2);
+                    break;
+                case "ucgen":
+                    Console.WriteLine("1. Kenar uzunluğunu girin:");
+                    int side1 = GetNumberInputIndex();
+                    Console.WriteLine("2. Kenar uzunluğunu girin:");
+                    int side2 = GetNumberInputIndex();
+                    Console.WriteLine("3. Kenar uzunluğunu girin:");
+                    int side3 = GetNumberInputIndex();
+                    sekil = new Ucgen(side1, side2, side3);
+                    break;
+                case "kup":
+                    Console.WriteLine("Kenar uzunluğunu girin:");
+                    int s1 = GetNumberInputIndex();
+                    sekil = new Kup(s1);
+                    break;
+                default:
+                    Console.WriteLine("Geçersiz şekil.");
+                    return;
+            }
+
+            Console.WriteLine("İşlem tipini seçiniz (alan, çevre, hacim):");
+            islemTipi = Console.ReadLine().ToLower();
+            seciliSekilIslemi(sekil, islemTipi);
+        }
+
+        public static void seciliSekilIslemi(Sekil sekil, string islemTipi)
+        {
+            switch (islemTipi)
+            {
+                case "alan":
+                    Console.WriteLine($"Alan: {sekil.HesaplaAlan()}");
+                    break;
+                case "cevre":
+                    Console.WriteLine($"Çevre: {sekil.HesaplaCevre()}");
+                    break;
+                case "hacim":
+                    try
+                    {
+                        Console.WriteLine($"Hacim: {sekil.HesaplaHacim()}");
+                    }
+                    catch (NotImplementedException)
+                    {
+                        Console.WriteLine("Bu şekil için hacim hesaplanamaz.");
+                    }
+                    break;
+                default:
+                    Console.WriteLine("Geçersiz işlem türü.");
+                    break;
+            }
+        }
     }
 }

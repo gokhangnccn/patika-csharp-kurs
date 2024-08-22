@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace patikaDevOdevleri
+namespace patika_csharp_kurs
 {
     public class DaireCiz
     {

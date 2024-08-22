@@ -5,42 +5,37 @@ using System.Text;
 using System.Threading.Tasks;
 using System;
 
-namespace patikaDevOdevleri
+namespace patika_csharp_kurs
 {
 
     class UcgenCiz
     {
-        // Üçgen çiziminden sorumlu sınıf
-        public class TriangleDrawer
+
+        public void DrawTriangle(int height)
         {
-            // Verilen yükseklik değerine göre üçgen çizen metot
-            public void DrawTriangle(int height)
+            for (int i = 1; i <= height; i++)
             {
-                for (int i = 1; i <= height; i++)
-                {
-                    PrintSpaces(height - i);
-                    PrintStars(i);
-                    Console.WriteLine();
-                }
+                PrintSpaces(height - i);
+                PrintStars(i);
+                Console.WriteLine();
             }
+        }
 
-            // Satır başındaki boşlukları basan metot
-            private void PrintSpaces(int count)
+        private void PrintSpaces(int count)
+        {
+            for (int i = 0; i < count; i++)
             {
-                for (int i = 0; i < count; i++)
-                {
-                    Console.Write(" ");
-                }
+                Console.Write(" ");
             }
+        }
 
-            // Satırdaki yıldızları basan metot
-            private void PrintStars(int count)
+        private void PrintStars(int count)
+        {
+            for (int i = 0; i < count * 2 - 1; i++)
             {
-                for (int i = 0; i < count * 2 - 1; i++)
-                {
-                    Console.Write("*");
-                }
+                Console.Write("*");
             }
+            
         }
 
     }
