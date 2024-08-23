@@ -30,7 +30,7 @@ namespace patika_csharp_kurs
                 if (i + 1 < sonuclar.Length) // Sonraki elemanın var olup olmadığını kontrol et
                 {
                     if (sonuclar[i] != sonuclar[i + 1])
-                        sonSonuclar += (sonuclar[i] + sonuclar[i + 1]) + " ";
+                        sonSonuclar += (sonuclar[i] * sonuclar[i + 1]) + " ";
                     else
                         sonSonuclar += Math.Pow(sonuclar[i] + sonuclar[i+1], 2) + " "; // Sayının karesini al
                 }
