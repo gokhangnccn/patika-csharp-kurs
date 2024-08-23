@@ -24,6 +24,8 @@ namespace patika_csharp_kurs
             Console.WriteLine("6. Geometrik şekil işlemleri:");
             Console.WriteLine("7. Girilen sayı dizisinde ikili sayılara işlem yap:");
             Console.WriteLine("8. Girilen sayı dizisinde 67 den büyük ve küçük sayılar için mutlak fark işlem yap:");
+            Console.WriteLine("9. İlk ve son karakterleri değiştir:");
+
 
 
             Console.WriteLine("0. Çık:");
@@ -74,6 +76,11 @@ namespace patika_csharp_kurs
                     Console.WriteLine("Lütfen arasında boşluk bırakarak 67 den büyük veya küçük sayı dizisini giriniz (24 94 32 69 gibi):");
                     MutlakKare mutlakDizi = new MutlakKare(Console.ReadLine());
                     Console.WriteLine(mutlakDizi.Result());
+                    break;
+                case 9:
+                    Console.WriteLine("Lütfen cümleyi giriniz:");
+                    KarakterleriDegistir karakterleriDegistir = new KarakterleriDegistir();
+                    karakterleriDegistir.ChangeFirstAndLastChars(Console.ReadLine());
                     break;
                 case 0:
                     Console.WriteLine("Çıkış yapılıyor...");
