@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using patika_csharp_kurs;
 using patika_csharp_kurs.AlanHesaplama;
+using patika_csharp_kurs.VotingApplication;
 
 namespace patika_csharp_kurs
 {
@@ -26,6 +27,10 @@ namespace patika_csharp_kurs
             Console.WriteLine("8. Girilen sayı dizisinde 67 den büyük ve küçük sayılar için mutlak fark işlem yap:");
             Console.WriteLine("9. İlk ve son karakterleri değiştir:");
             Console.WriteLine("10. Cümledeki kelimelerden yan yana iki sessiz olanları bul:");
+
+            Console.WriteLine("Diğer Büyük Uygulamalar");
+            Console.WriteLine("50. Oylama uygulaması:");
+
 
 
 
@@ -88,6 +93,12 @@ namespace patika_csharp_kurs
                     Console.WriteLine("Lütfen cümleyi giriniz:");
                     YanYanaKontrolEt yanYanaKontrolEt = new YanYanaKontrolEt();
                     yanYanaKontrolEt.Result(Console.ReadLine());
+                    break;
+
+                case 50:
+                    Console.Clear();
+                    VotingApp app = new VotingApp();
+                    app.Run();
                     break;
                 case 0:
                     Console.WriteLine("Çıkış yapılıyor...");

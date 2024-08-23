@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using patika_csharp_kurs.VotingApplication;
 
 namespace patika_csharp_kurs
 {
@@ -40,5 +41,7 @@ namespace patika_csharp_kurs
                 $"\nSayıların mutlak fark karelerinin toplamı {mutlakKareleri}";
             return str;
         }
+
     }
+    
 }
