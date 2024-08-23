@@ -25,6 +25,8 @@ namespace patika_csharp_kurs
             Console.WriteLine("7. Girilen sayı dizisinde ikili sayılara işlem yap:");
             Console.WriteLine("8. Girilen sayı dizisinde 67 den büyük ve küçük sayılar için mutlak fark işlem yap:");
             Console.WriteLine("9. İlk ve son karakterleri değiştir:");
+            Console.WriteLine("10. Cümledeki kelimelerden yan yana iki sessiz olanları bul:");
+
 
 
 
@@ -81,6 +83,11 @@ namespace patika_csharp_kurs
                     Console.WriteLine("Lütfen cümleyi giriniz:");
                     KarakterleriDegistir karakterleriDegistir = new KarakterleriDegistir();
                     karakterleriDegistir.ChangeFirstAndLastChars(Console.ReadLine());
+                    break;
+                case 10:
+                    Console.WriteLine("Lütfen cümleyi giriniz:");
+                    YanYanaKontrolEt yanYanaKontrolEt = new YanYanaKontrolEt();
+                    yanYanaKontrolEt.Result(Console.ReadLine());
                     break;
                 case 0:
                     Console.WriteLine("Çıkış yapılıyor...");
