@@ -22,6 +22,8 @@ namespace patika_csharp_kurs
             Console.WriteLine("4. Stringteki seçili indexteki harfi sil:");
             Console.WriteLine("5. Girilen cümledeki kelimeleri ters çevir:");
             Console.WriteLine("6. Geometrik şekil işlemleri:");
+            Console.WriteLine("7. Girilen sayı dizisinde ikili sayılara işlem yap:");
+
             Console.WriteLine("0. Çık:");
 
             Console.WriteLine("Kullanacağınız Uygulamayı Giriniz:");
@@ -60,6 +62,11 @@ namespace patika_csharp_kurs
                     Console.WriteLine("Lütfen şu şekillerden birini seçiniz: (Daire, Dortgen, Kup, Ucgen)");
                     sekilTipi = Console.ReadLine();
                     seciliSekil(sekilTipi);
+                    break;
+                case 7:
+                    Console.WriteLine("Lütfen arasında boşluk bırakarak sayı dizisini giriniz (2 3 6 1 gibi):");
+                    IkilileriAl dizi = new IkilileriAl(Console.ReadLine());
+                    Console.WriteLine(dizi.Result());
                     break;
                 case 0:
                     Console.WriteLine("Çıkış yapılıyor...");
