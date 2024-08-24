@@ -7,7 +7,6 @@ using System.Threading.Tasks;
 using patika_csharp_kurs;
 using patika_csharp_kurs.AlanHesaplama;
 using patika_csharp_kurs.VotingApplication;
-using patika_csharp_kurs.AtmApplication;
 
 namespace patika_csharp_kurs
 {
@@ -31,7 +30,6 @@ namespace patika_csharp_kurs
             
             Console.WriteLine("\nDiğer Büyük Uygulamalar");
             Console.WriteLine("50. Oylama uygulaması");
-            Console.WriteLine("51. ATM uygulaması");
 
             Console.WriteLine("\n0. Çık\n");
             Console.WriteLine("Kullanacağınız Uygulamayı Giriniz:");
@@ -96,11 +94,6 @@ namespace patika_csharp_kurs
                     Console.Clear();
                     VotingApp app = new VotingApp();
                     app.Run();
-                    break;
-                case 51:
-                    Console.Clear();
-                    Islemler atm = new Islemler();
-                    atm.Calistir();
                     break;
                 case 0:
                     Console.WriteLine("Çıkış yapılıyor...");

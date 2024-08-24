@@ -1,2 +1,10 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿using AtmConsoleApp;
+
+public class Program
+{
+    public static void Main(string[] args)
+    {
+        Islemler atm = new Islemler();
+        atm.Calistir();
+    }
+}

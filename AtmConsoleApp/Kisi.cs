@@ -4,8 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace patika_csharp_kurs.AtmApplication
-{
+namespace AtmConsoleApp;
+
     public class Kisi
     {
 
@@ -26,5 +26,4 @@ namespace patika_csharp_kurs.AtmApplication
             this.bakiye = bakiye;
 
         }
-    }
 }
