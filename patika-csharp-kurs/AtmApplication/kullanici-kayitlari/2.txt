@@ -1,0 +1,99 @@
+Log: BAŞARILI! : Para Alma
+Kimlik: 2
+Kişi: Mehmet Kaya
+Miktar: 4999
+Alıcı Kimlik: 1
+Alıcı ad: Ahmet Yılmaz
+Tarih: 24.08.2024 16:59:28
+
+Log: BAŞARILI! : Para Alma
+Kimlik: 2
+Kişi: Mehmet Kaya
+Alıcı Kimlik: 1
+Alıcı ad: Ahmet Yılmaz
+Tarih: 24.08.2024 18:20:27
+
+Log: BAŞARILI! : Para Alma
+Kimlik: 2
+Kişi: Mehmet Kaya
+Miktar: 520
+Alıcı Kimlik: 1
+Alıcı ad: Ahmet Yılmaz
+Tarih: 24.08.2024 18:21:00
+
+Log: BAŞARILI! : Giriş
+Kimlik: 2
+Kişi: Mehmet Kaya
+Tarih: 24.08.2024 18:21:11
+
+Log: BAKİYE! : Bakiye Görüntüleme
+Kimlik: 2
+Kişi: Mehmet Kaya
+Miktar: 3520
+Tarih: 24.08.2024 18:21:17
+
+Log: BAŞARISIZ! : Giriş
+Kimlik: 2
+Kişi: Mehmet Kaya
+Tarih: 24.08.2024 18:22:24
+
+Log: BAŞARISIZ! : Giriş
+Kimlik: 2
+Kişi: Mehmet Kaya
+Tarih: 24.08.2024 18:22:28
+
+Log: BAŞARISIZ! : Giriş
+Kimlik: 2
+Kişi: Mehmet Kaya
+Tarih: 24.08.2024 18:23:16
+
+Log: BAŞARISIZ! : Giriş
+Kimlik: 2
+Kişi: Mehmet Kaya
+Tarih: 24.08.2024 18:23:19
+
+Log: BAŞARILI! : Giriş
+Kimlik: 2
+Kişi: Mehmet Kaya
+Tarih: 24.08.2024 18:23:21
+
+Log: BAŞARILI! : Para Çekme
+Kimlik: 2
+Kişi: Mehmet Kaya
+Miktar: 500
+Tarih: 24.08.2024 18:23:29
+
+Log: BAŞARILI! : Kayıt
+Kimlik: 2
+Kişi: gokhan genccan
+Tarih: 24.08.2024 20:02:30
+
+Log: BAŞARISIZ! : Giriş
+Kimlik: 2
+Kişi: Mehmet Kaya
+Tarih: 24.08.2024 20:02:37
+
+Log: BAŞARILI! : Para Alma
+Kimlik: 2
+Kişi: Mehmet Kaya
+Miktar: 200
+Alıcı Kimlik: 3
+Alıcı ad: Gokhan Genccan
+Tarih: 24.08.2024 20:09:31
+
+Log: BAŞARISIZ! : Giriş
+Kimlik: 2
+Kişi: Mehmet Kaya
+Tarih: 24.08.2024 20:09:50
+
+Log: BAŞARILI! : Giriş
+Kimlik: 2
+Kişi: Mehmet Kaya
+Tarih: 24.08.2024 20:09:54
+
+Log: BAKİYE! : Bakiye Görüntüleme
+Kimlik: 2
+Kişi: Mehmet Kaya
+Miktar: 3200
+Tarih: 24.08.2024 20:09:57
+

@@ -6,7 +6,10 @@ namespace patika_csharp_kurs.VotingApplication
 {
     public class VotingApp
     {
+        //username, sifre
         private Dictionary<string, string> users = new();
+
+        //kategori, oy
         private Dictionary<string, int> votes = new();
         private List<string> categories = new() { "Film", "Tech Stack", "Spor" };
 
@@ -23,7 +26,7 @@ namespace patika_csharp_kurs.VotingApplication
                 RecordVote(choice);
 
                 Console.WriteLine("Başka bir oy kullanmak ister misiniz? (E/H)");
-                voting = Console.ReadLine()?.ToUpper() == "E";
+                voting = Console.ReadLine().ToUpper() == "E";
             }
 
             ShowResults();

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace patika_csharp_kurs
 {
-    public class KarakterleriDegistir
+    public class Karakterleridegistir
     {
 
         public void ChangeFirstAndLastChars(string input)

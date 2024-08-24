@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using patika_csharp_kurs;
 using patika_csharp_kurs.AlanHesaplama;
 using patika_csharp_kurs.VotingApplication;
+using patika_csharp_kurs.AtmApplication;
 
 namespace patika_csharp_kurs
 {
@@ -27,16 +28,12 @@ namespace patika_csharp_kurs
             Console.WriteLine("8. Girilen sayı dizisinde 67 den büyük ve küçük sayılar için mutlak fark işlem yap:");
             Console.WriteLine("9. İlk ve son karakterleri değiştir:");
             Console.WriteLine("10. Cümledeki kelimelerden yan yana iki sessiz olanları bul:");
+            
+            Console.WriteLine("\nDiğer Büyük Uygulamalar");
+            Console.WriteLine("50. Oylama uygulaması");
+            Console.WriteLine("51. ATM uygulaması");
 
-            Console.WriteLine("Diğer Büyük Uygulamalar");
-            Console.WriteLine("50. Oylama uygulaması:");
-
-
-
-
-
-            Console.WriteLine("0. Çık:");
-
+            Console.WriteLine("\n0. Çık\n");
             Console.WriteLine("Kullanacağınız Uygulamayı Giriniz:");
             int secenek = int.Parse(Console.ReadLine());
 
@@ -86,8 +83,8 @@ namespace patika_csharp_kurs
                     break;
                 case 9:
                     Console.WriteLine("Lütfen cümleyi giriniz:");
-                    KarakterleriDegistir karakterleriDegistir = new KarakterleriDegistir();
-                    karakterleriDegistir.ChangeFirstAndLastChars(Console.ReadLine());
+                    Karakterleridegistir karakterleridegistir = new Karakterleridegistir();
+                    karakterleridegistir.ChangeFirstAndLastChars(Console.ReadLine());
                     break;
                 case 10:
                     Console.WriteLine("Lütfen cümleyi giriniz:");
@@ -99,6 +96,11 @@ namespace patika_csharp_kurs
                     Console.Clear();
                     VotingApp app = new VotingApp();
                     app.Run();
+                    break;
+                case 51:
+                    Console.Clear();
+                    Islemler atm = new Islemler();
+                    atm.Calistir();
                     break;
                 case 0:
                     Console.WriteLine("Çıkış yapılıyor...");

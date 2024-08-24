@@ -9,7 +9,7 @@ namespace patika_csharp_kurs
 {
     public class MutlakKare
     {
-        public string sayiDizisi { get; set; }
+        public string sayidizisi { get; set; }
         public int[] sonucDizisi { get; set; }
         public int farkToplami { get; set; }
         public double mutlakKareleri { get; set; }
@@ -17,12 +17,12 @@ namespace patika_csharp_kurs
 
         public MutlakKare(string dizi)
         {
-            sayiDizisi = dizi;
+            sayidizisi = dizi;
         }
 
         public string Result()
         {
-            sonucDizisi = sayiDizisi
+            sonucDizisi = sayidizisi
                 .Split(' ')          
                 .Select(int.Parse)   
                 .ToArray();
