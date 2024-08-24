@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("patika-csharp-kurs")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b13ae2c26ac825e62f8f21e0be5f6b9d85bd5174")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+acaa9aee16c4712c50dfb39561b5aa9fb092e38d")]
 [assembly: System.Reflection.AssemblyProductAttribute("patika-csharp-kurs")]
 [assembly: System.Reflection.AssemblyTitleAttribute("patika-csharp-kurs")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
